@@ -1,0 +1,424 @@
+/*
+* the file created by pian maulana
+*/
+body{
+	padding: 0px;
+	margin: 0px;
+	background-image: url('../img/background-4.jpg');
+}
+::placeholder{
+	color: gray;
+}
+.fa{
+    font-size: 16px;
+}
+
+/*navbar*/
+nav{
+	height: 80px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background-image: linear-gradient(to bottom right, #9423ce, purple);
+    /*background-image: linear-gradient(to bottom right, #393248e8, purple);*/
+    /*background: #9423ce;*/
+    box-shadow: 2px 2px 2px whitesmoke
+}
+nav > .l-column{
+	margin-left: 20%;
+    width: 50%;
+    float: left;
+    height: 60px;
+    padding: 10px 10px 10px 20px;
+}
+nav > .l-column > .search-box{
+    background: white;
+    padding: 10px 15px 10px 15px;
+    margin-top: 7px;
+    border-radius: 50px;
+    width: 80%;
+    margin-left: 8%;
+}
+nav > .l-column > .search-box > i{
+    font-size: 22px;
+    color: gray;
+}
+nav > .l-column > .search-box > input[type="text"]{
+    width: 40%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: gray;
+}
+nav > .r-column{
+	float: right;
+    width: 30%;
+    text-align: right;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+nav > .r-column > .img-help{
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+}
+nav > .r-column > .img-profile{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	margin-left: 20px;
+    border: 3px solid #f2f2f2;
+}
+/*sidebar*/
+aside{
+	background: transparent;
+	width: 20%;
+	height: 100%;
+	z-index: 99;
+	position: fixed;
+}
+aside > .logo{
+    padding-left: 20px;
+    height: 80px;
+    /*background-image: linear-gradient(to bottom right, #9423ce, purple);*/
+}
+aside > .logo > img{
+    width: 50px;
+    height: 70px;
+    margin-top: 5px;
+}
+aside > .content{
+    padding: 20px;
+    height: 100%;
+    background: white;
+    /*background: rgba(225, 225, 225, 0.7);*/
+    box-shadow: 3px 2px 2px mediumpurple;
+}
+aside > .content > .compose{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+aside > .content > .compose > button{
+    padding: 10px;
+    width: 150px;
+    border-radius: 30px;
+    background: #9423ce;
+    color: white;
+    border: none;
+    outline: none;
+}
+aside > .content > .row{
+    margin-top: 8px;
+    padding: 3px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #464141;
+    line-height: 1.5em;
+}
+aside > .content > .row:hover{
+    color: white;
+    background: purple;
+}
+aside > .content > .active{
+    color: white;
+    background: purple;
+}
+
+aside > .content > .chat-content{
+    height: 120px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+aside > .content > .chat-content > .row{
+    margin-top: 10px;
+    font-size: 13px;
+}
+.caption-chat{
+    color: gray;
+    font-size: 12px;
+}
+/*wrapper*/
+.wrapper{
+    position: fixed;
+    margin-top: 120px;
+    margin-left: 25%;
+    /*background: rgba(225, 225, 225, 0.8);*/
+    background: white;
+    height: 90%;
+    width: 70%;
+    padding-bottom: 30px;
+}
+.wrapper > .top-wrapper{
+    padding: 20px 20px 5px 20px;
+    width: 100%;
+    background: #393248e8;
+}
+.wrapper > .top-wrapper > .default-list, .wrapper > .top-wrapper > .second-list{
+   padding: 0px;
+}
+.wrapper > .top-wrapper > .default-list > li, .wrapper > .top-wrapper > .second-list > li{
+    list-style-type: none;
+    display: inline;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.wrapper > .top-wrapper > .default-list > li > button, .wrapper > .top-wrapper > .second-list > li > button{
+    font-size: 20px;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: mediumpurple;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+}
+.wrapper > .top-wrapper > .default-list > li > button:hover{
+    background: purple;
+}
+.tabs{
+    width: 100%;
+    padding: 15px 15px 0px 15px;
+    text-align: center;
+    background: white;
+    letter-spacing: 2px;
+    color: #464141;
+}
+.tabs > .row > .tab-header{
+    padding: 0px 0px 15px 0px;
+    height: 100%;
+    cursor: pointer;
+}
+.tabs > .row > .tab-header:hover{
+    border-bottom: 2px solid purple;
+    color: purple;
+}
+.tabs > .row > .active{
+    border-bottom: 2px solid purple;
+    color: purple;
+}
+.wrapper > .wrapper-content{
+    height: 420px;
+    width: 100%;
+    overflow-y: scroll;
+}
+.wrapper > .wrapper-content > .tab{
+    padding: 0px 20px 10px 20px;
+    color: #464141;
+}
+.wrapper > .wrapper-content > .tab > .row{
+    border-bottom: 1px solid #aaa;
+    padding-top: 10px;
+}
+.wrapper-list-icon{
+    padding: 0px;
+}
+.wrapper-list-icon > li{
+    list-style-type: none;
+    display: inline;
+    letter-spacing: 4px;
+}
+.wrapper-list-icon > li > i{
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+}
+.wrapper-list-icon > li > .fa-star{
+    color: yellow;
+}
+.wrapper > .wrapper-footer{
+    width: 100%;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 13px;
+    color: #aaa;
+}
+.wrapper > .wrapper-footer > button{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background: #bbb;
+   border: none;
+   margin-left: 5px;
+   transition: 0.5s;
+   outline: none;
+}
+.wrapper > .wrapper-footer > button:hover{
+  color: white;
+  background: purple;
+}
+.wrapper > .wrapper-content > .tab{
+    display: none;
+}
+.wrapper > .wrapper-content > .active{
+    display: block;
+}
+/*message-form*/
+.message-form{
+    width: 35%;
+    background: white;
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    right: 0;
+    margin-right: 50px;
+    border-radius: 5px 5px 0px 0px;
+    height: 450px;
+}
+.message-form > .header{
+    border-radius: 5px 5px 0px 0px;
+    background: #393248e8;
+    color: white;
+    padding: 10px;
+}
+.message-form > .header > ul{
+    padding: 0px;
+    float: right;
+}
+.message-form > .header > ul > li{
+   list-style-type: none;
+   display: inline;
+   margin-left: 10px;
+   cursor: pointer;
+}
+.message-form > .content{
+    padding: 0px 20px 20px 20px;
+    height: 80%;
+}
+.message-form > .content > form{
+    height: 60%;
+}
+.message-form > .content > form > input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+
+.ql-toolbar.ql-snow{
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.ql-container.ql-snow{
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.ql-tooltip.ql-editing.ql-flip{
+    left: -50px;
+    top: 50px;
+}
+.message-form > .content > form > button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: mediumpurple;
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    float: right;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.message-form > .content > form > button:hover{
+    background: purple;
+}
+/*message content */
+.message-content{
+    padding: 20px;
+}
+.message-content > .header{
+    font-size: 20px;
+}
+.message-content > .header > ul{
+    float: right;
+    padding: 0px;
+}
+.message-content > .header > ul > li{
+    list-style-type: none;
+    display: inline;
+    font-size: 20px;
+    margin-left: 10px;
+    color: #464141;
+    cursor: pointer;
+}
+.message-content > .header > ul > li >i{
+    font-size: 20px;
+    transition: 0.5s;
+}
+.message-content > .header > ul > li >i:hover{
+   color: purple;
+}
+.message-content > .detail{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.message-content > .detail > .dropdown-menu{
+    padding: 8px;
+    font-size: 12px;
+}
+.message-content > .detail > button{
+    outline: none;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.message-content > .detail > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: none;
+    margin-right: 10px;
+}
+.message-content > .body{
+    height: 350px;
+    overflow-y: scroll;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+.message-content > .footer{
+    padding-top: 20px;
+    text-align: right;
+}
+.message-content > .footer >button{
+    width: 60px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #464141;
+    transition: 0.5s;
+}
+.message-content > .footer >button:hover{
+    background: purple;
+    color: white;
+}
+.message-box{
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 5px;
+    z-index: 99;
+    bottom: 0;
+    left: 15px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}

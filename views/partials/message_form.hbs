@@ -1,0 +1,21 @@
+<div class="message-form hidden">
+	<div class="header">
+		<span>New Message</span>
+		<ul>
+			<li><i class="fa fa-minus"></i></li>
+			<li><i class="fa fa-compress"></i></li>
+			<li onclick="closeCompose()"><i class="fa fa-times"></i></li>
+		</ul>
+	</div>
+	<div class="content">
+		<form class="form_message" id="form_message" enctype="Multipart/form-data">
+			<input type="text" name="recipients" placeholder="Recipients"/>
+			<input type="text" name="subject" placeholder="Subject"/>
+			<div id="editor">
+              <p><i>type here .....</i></p>
+            </div>
+			<button><i class="fa fa-refresh" aria-hidden="true"></i></button>
+			<button type="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+		</form>
+	</div>
+</div>

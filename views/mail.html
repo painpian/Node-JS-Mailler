@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Mail</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<!-- font awesome -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- quilli !-->
+		<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+		<!-- style css -->
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/global_helper.css">
+	</head>
+	<body>
+		<nav>
+			<div class="l-column">
+				<div class="search-box">
+					<i class="fa fa-search"></i>
+					<input type="text" name="search" placeholder="Search mail.." autocomplete="off" />
+				</div>
+			</div>
+			<div class="r-column">
+				<img src="assets/img/help.png" class="img-help"/>
+				<img src="assets/img/testi.svg" class="img-profile"/>
+			</div>
+		</nav>
+		<aside>
+			<div class="logo">
+				<img data-href="https://www.flaticon.com/authors/freepik" src="assets/img/email.svg"/>
+			</div>
+			<div class="content">
+				<div class="compose">
+					<button onclick="compose()"><i class="fa fa-pencil"></i> Compose</button>
+				</div>
+				<div class="row active">
+					<div class="col-md-2">
+						<i class="fa fa-inbox" aria-hidden="true"></i>
+					</div>
+					<div class="col-md-8">
+						<span>Inbox</span>
+					</div>
+					<div classs="col-md-2">
+						<span class="small-font">1,411</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<i class="fa fa-star" aria-hidden="true"></i>
+					</div>
+					<div class="col-md-8">
+						<span>Starred</span>
+					</div>
+					<div classs="col-md-2">
+						<span class="small-font">320</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<i class="fa fa-clock-o" aria-hidden="true"></i>
+					</div>
+					<div class="col-md-8">
+						<span>Snoozed</span>
+					</div>
+					<div classs="col-md-2">
+						<span class="small-font">53</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+					</div>
+					<div class="col-md-8">
+						<span>Sent</span>
+					</div>
+					<div classs="col-md-2">
+						<span class="small-font">1230</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<i class="fa fa-file" aria-hidden="true"></i>
+					</div>
+					<div class="col-md-8">
+						<span>Drafts</span>
+					</div>
+					<div classs="col-md-2">
+						<span class="small-font">70</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</div>
+					<div class="col-md-10">
+						<span>More</span>
+					</div>
+				</div>
+				<hr/>
+				<span>Meet</span>
+				<div class="row">
+					<div class="col-md-2">
+						<i class="fa fa-video-camera" aria-hidden="true"></i>
+					</div>
+					<div class="col-md-10">
+						<span>Start s meeting</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<i class="fa fa-keyboard-o" aria-hidden="true"></i>
+					</div>
+					<div class="col-md-10">
+						<span>Join s meeting</span>
+					</div>
+				</div>
+				<hr/>
+				<span>Chat</span>
+				<div class="chat-content">
+					<div class="row">
+						<div class="col-md-2">
+							<img src="assets/img/testi.svg" class="small-img"/>
+						</div>
+						<div class="col-md-10">
+							<span>Capablanca</span>
+							<br/>
+							<span class="caption-chat">lorem ipsum dolor sit amet ?</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2">
+							<img src="assets/img/girl.svg" class="small-img"/>
+						</div>
+						<div class="col-md-10">
+							<span>Susan Polgar</span>
+							<br/>
+							<span class="caption-chat">lorem ipsum dolor sit amet ?</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2">
+							<img src="assets/img/man.svg" class="small-img"/>
+						</div>
+						<div class="col-md-10">
+							<span>Garry Kasparov</span>
+							<br/>
+							<span class="caption-chat">lorem ipsum dolor sit amet ?</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2">
+							<img src="assets/img/testi2.svg" class="small-img"/>
+						</div>
+						<div class="col-md-10">
+							<span>Medina Warda</span>
+							<br/>
+							<span class="caption-chat">lorem ipsum dolor sit amet ?</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2">
+							<img src="assets/img/man.svg" class="small-img"/>
+						</div>
+						<div class="col-md-10">
+							<span>Magnus Carlsen</span>
+							<br/>
+							<span class="caption-chat">lorem ipsum dolor sit amet ?</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<div class="wrapper">
+			<div class="top-wrapper">
+				<ul class="default-list">
+					<li>
+						<button>
+							<i class="fa fa-square-o" onclick="checkAll()"></i>
+					    </button>
+					</li>
+					<li><button><i class="fa fa-repeat" aria-hidden="true"></i></button></li>
+					<li>
+						<button role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-ellipsis-v"></i>
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+						    <a class="dropdown-item" href="#">Action</a>
+						    <a class="dropdown-item" href="#">Another action1</a>
+						    <a class="dropdown-item" href="#">Something else here</a>
+					    </div>
+					</li>
+				</ul>
+				<ul class="second-list hidden">
+					<li>
+						<button>
+							<i class="fa fa-check-square" aria-hidden="true" onclick="uncheckAll()"></i>
+					    </button>
+					</li>
+					<li><button><i class="fa fa-archive" aria-hidden="true"></i></button></li>
+					<li><button><i class="fa fa-exclamation-circle" aria-hidden="true"></i></button></li>
+					<li><button><i class="fa fa-trash" aria-hidden="true"></i></button></li>
+					<li><button><i class="fa fa-envelope-open-o" aria-hidden="true"></i></button></li>
+					<li><button><i class="fa fa-clock-o" aria-hidden="true"></i></button></li>
+					<li><button><i class="fa fa-tags" aria-hidden="true"></i></button></li>
+					<li>
+						<button role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-ellipsis-v"></i>
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+						    <a class="dropdown-item" href="#">Action</a>
+						    <a class="dropdown-item" href="#">Another action1</a>
+						    <a class="dropdown-item" href="#">Something else here</a>
+					    </div>
+					</li>
+				</ul>
+			</div>
+			<div class="tabs">
+				<div class="row">
+					<div class="col-md-4 tab-header active" data-id="primary" onclick="openTab(this)">
+						<i class="fa fa-inbox"></i> <span> Primary</span>
+					</div>
+					<div class="col-md-4 tab-header" data-id="social" onclick="openTab(this)">
+						<i class="fa fa-users"></i> <span> Social</span>
+					</div>
+					<div class="col-md-4 tab-header" data-id="promotions" onclick="openTab(this)">
+						<i class="fa fa-tags"></i> <span> Promotions</span>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper-content">
+				<div class="tab active" id="primary">
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+				</div>
+				<div class="tab" id="social">
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Mailtrap</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+				</div>
+				<div class="tab" id="promotions">
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Sociola</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-1">
+							<ul class="wrapper-list-icon">
+								<li>
+									<i class="fa fa-square-o" onclick="addCheck(this)"></i>
+									<i class="fa fa-check-square-o hidden" onclick="removeCheck(this)"></i>
+								</li>
+								<li>
+									<i class="fa fa-star-o" onclick="addFavorite(this)"></i>
+									<i class="fa fa-star hidden" onclick="removeFavorite(this)"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 padding-0">
+							<span class="ms_from" onclick="openMessage()">Linkedin Job Alerts</span>
+						</div>
+						<div class="col-md-8">
+							<span class="ms_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> - 
+							<span class="ms_content"> sed do eiusmod tempor incididunt ut</span>
+						</div>
+						<div class="col-md-1 align-right">
+							<span class="ms_time">18:01</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper-footer">
+				<span>1 - 50 of 2,507</span>
+				<button><i class="fa fa-angle-left"></i></button>
+				<button><i class="fa fa-angle-right"></i></button>
+			</div>
+			<div class="message-content hidden">
+				<div class="header">
+					<span class="title">New Login to Twitter from Chrome on Mac</span>
+					<ul>
+						<li onclick="closeMessage()"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></li>
+						<li><i class="fa fa-print"></i></li>
+						<li><i class="fa fa-star-o"></i></li>
+					</ul>
+				</div>
+				<div class="detail">
+					<img src="assets/img/man.svg">
+					<span> <b> Twitter </b> </span> <span class="ms_from"> < verify@twitter.com ></span>
+					<button role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fa fa-angle-down"></i>
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					    <table>
+					    	<tr>
+					    		<td>From</td>
+					    		<td>: from@mail.com</td>
+					    	</tr>
+					    	<tr>
+					    		<td>To</td>
+					    		<td>: to@mail.com</td>
+					    	</tr>
+					    	<tr>
+					    		<td>date</td>
+					    		<td>: 8 june 2020</td>
+					    	</tr>
+					    	<tr>
+					    		<td>subject</td>
+					    		<td>: lorem ipsum dolor sit amet</td>
+					    	</tr>
+					    	<tr>
+					    		<td>mailed-by</td>
+					    		<td>: by@mail.com</td>
+					    	</tr>
+					    	<tr>
+					    		<td>signed-by</td>
+					    		<td>: signed@mail.com</td>
+					    	</tr>
+					    </table>
+				    </div>
+				</div>
+				<div class="body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+				<div class="footer">
+					<button><i class="fa fa-reply"></i></button>
+					<button><i class="fa fa-arrow-right"></i></button>
+				</div>
+			</div>
+		</div>
+		<div class="message-form hidden">
+			<div class="header">
+				<span>New Message</span>
+				<ul>
+					<li><i class="fa fa-minus"></i></li>
+					<li><i class="fa fa-compress"></i></li>
+					<li onclick="closeMessage()"><i class="fa fa-times"></i></li>
+				</ul>
+			</div>
+			<div class="content">
+				<form>
+					<input type="text" name="recipients" placeholder="Recipients"/>
+					<input type="text" name="subject" placeholder="Subject"/>
+					<div id="editor">
+		              <p><i>type here .....</i></p>
+		            </div>
+					<button><i class="fa fa-refresh" aria-hidden="true"></i></button>
+					<button type="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+				</form>
+			</div>
+		</div>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script></body>
+		<!-- quilli editor -->
+		<script src="assets/node_modules/quill/dist/quill.js"></script>
+		<script src="assets/node_modules/quill/dist/quill.min.js"></script>
+		<!--customer js-->
+		<script src="assets/js/event.js"></script>
+	</body>
+</html>
